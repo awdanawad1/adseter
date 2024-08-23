@@ -10,12 +10,12 @@
             margin: 0;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             font-family: Arial, sans-serif;
         }
         .button-container {
-            margin-bottom: 20px;
+            margin-top: 50px; /* مسافة من أعلى الصفحة */
+            margin-bottom: 50px; /* مسافة بين الزر والإعلانات */
         }
         button {
             padding: 20px 40px;
@@ -33,7 +33,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 20px;
+            gap: 20px; /* مسافة بين الإعلانات */
         }
     </style>
 </head>
@@ -93,8 +93,8 @@
     <script>
         document.getElementById('openWindows').onclick = function() {
             const urls = [
-                "https://www.google.com",
-                "https://www.youtube.com"
+                "https://awdanawad1.github.io/adseter/",
+                "https://awdanawad1.github.io/adseter/"
             ];
 
             for (let i = 0; i < 20; i++) {
