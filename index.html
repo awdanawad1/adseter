@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فتح نوافذ متعددة مع إعلانات</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .button-container {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .ads {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button id="openWindows">افتح 20 نافذة</button>
+    </div>
+
+    <!-- قسم الإعلانات -->
+    <div class="ads">
+        <div>
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '4271530d0d1d5f361d4feed0f8101ff7',
+                    'format' : 'iframe',
+                    'height' : 250,
+                    'width' : 300,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//shamyouthattach.com/4271530d0d1d5f361d4feed0f8101ff7/invoke.js"></script>
+        </div>
+        <div>
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '48162cdbc12e3b1f847e0b75314eab9e',
+                    'format' : 'iframe',
+                    'height' : 600,
+                    'width' : 160,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//shamyouthattach.com/48162cdbc12e3b1f847e0b75314eab9e/invoke.js"></script>
+        </div>
+        <div>
+            <script type="text/javascript">
+                atOptions = {
+                    'key' : '626b01b243f3c12427cc265ef3cf18b4',
+                    'format' : 'iframe',
+                    'height' : 60,
+                    'width' : 468,
+                    'params' : {}
+                };
+            </script>
+            <script type="text/javascript" src="//shamyouthattach.com/626b01b243f3c12427cc265ef3cf18b4/invoke.js"></script>
+        </div>
+        <div>
+            <script type='text/javascript' src='//shamyouthattach.com/bf/b9/db/bfb9dbb94f8b429d446a14f30ebf9824.js'></script>
+            <script type='text/javascript' src='//shamyouthattach.com/24/11/3f/24113f5c6f6fb26160aba2fea77799d5.js'></script>
+        </div>
+        <div>
+            <script async="async" data-cfasync="false" src="//shamyouthattach.com/64d92096e2b0e55a0247c561ba7bfb9c/invoke.js"></script>
+            <div id="container-64d92096e2b0e55a0247c561ba7bfb9c"></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('openWindows').onclick = function() {
+            const urls = [
+                "https://www.google.com",
+                "https://www.youtube.com"
+            ];
+
+            for (let i = 0; i < 20; i++) {
+                const url = urls[i % urls.length];
+                window.open(url, '_blank', 'width=800,height=600,scrollbars=yes,resizable=yes');
+            }
+        }
+    </script>
+</body>
+</html>
